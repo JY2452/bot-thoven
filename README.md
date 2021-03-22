@@ -1,6 +1,6 @@
 # Bot-thoven
 
-This repository contains the code for the Bot-thoven Project, a xylophone-playing robot that I built during my Senior Year in High School. I worked on this project with my friend David Cha. My individual responsibilities included familiarizing myself with the ARDUINO platform – a microcontroller that we used to program the motors of our robot.
+This repository contains the code for the **Bot-thoven Project**, a xylophone-playing robot that I built during my Senior Year in High School. I worked on this project with my friend David Cha. My individual responsibilities included familiarizing myself with the ***ARDUINO*** platform – *a microcontroller that we used to program the motors of our robot.*
 
 One servo motor was used for each key on the xylophone. A xylophone mallet was attached to this motor, and I programmed the motor to rotate to the appropriate value, in order to strike the xylophone key and play the desired note.
 
