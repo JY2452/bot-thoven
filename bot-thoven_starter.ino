@@ -1,5 +1,5 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////
-// BOT-THOVEN
+// BOT-THOVEN - STARTER CODE
 // Starter Code to play a tune on a xylophone-playing robot
 // By JASON PAK, 2020
 /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -12,17 +12,17 @@ Adafruit_PWMServoDriver pwm1 = Adafruit_PWMServoDriver(0x40);
 
 /////////////////////////////////////////////////////////////////////////////////////////////////
 // NOTE CLASS
-// Each "Note" represents one key on the xylophone and its servo motor
+// Each "Note" represents one key on the xylophone and its respective servo motor
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 class Note {
   private:
     int servoNum; // unique ID for the servo motor
     int dynamic; // larger number = larger volume/dynamic
-    int minVal;  //servo value at which mallet touches key
-    int maxVal; //servo value to which mallet comes up to after touching key
+    int minVal;  //servo rotation value at which mallet touches key
+    int maxVal; //servo rotation value that mallet comes up to after touching key
 
-    // Constructor
+  // Constructor
   public:
     Note(int servoN, int dyn, int minV) {
       this -> servoNum = servoN;
@@ -31,7 +31,7 @@ class Note {
       this->maxVal = minV + (60 / dyn); //adjusts maxValue depending on dynamic level
     }
 
-    // Method to play the note for a given duration (millisec)
+    // Method to play the note for a given duration (ms)
     void Note::playNote(int dur)
     {
       // rotate motor downwards to strike xylophone key
@@ -94,7 +94,7 @@ class Note {
 
 #define SERVO_FREQ 50 // Analog servos run at ~50 Hz updates
 
-//Instantiate Notes - (servo num, dynamic, min)
+//Instantiate Notes -> params: (servo id, dynamic, min)
 Note g1 = Note(0, 2, 109);
 Note a1 = Note(1, 2, 134);
 Note b1 = Note(2, 2, 132);
@@ -112,8 +112,8 @@ void setup() {
 }
 
 void loop() {
-  //modify the code depending on the tune you wish to play
-  // current code plays an upwards scale, 50ms per note:
+  //modify the code depending on the tune you wish to play!
+  // code sample below plays an upwards scale, 50ms per note:
   g1.playNote(50);
   a1.playNote(50);
   b1.playNote(50);
