@@ -1,6 +1,9 @@
 # Bot-thoven
 
-This repository contains the code used to build **Bot-thoven**, a xylophone-playing robot that I built during my Senior Year in High School. I worked on this project with my friend David Cha. My individual responsibilities included familiarizing myself with the ***ARDUINO*** platform – *a microcontroller that we used to program the motors of our robot.*
+This repository contains the code used to build **Bot-thoven**, a xylophone-playing robot that I built during my Senior Year in High School. 
+
+
+I worked on this project with my friend David Cha. My individual responsibilities included familiarizing myself with the ***ARDUINO*** platform – *a microcontroller that we used to program the motors of our robot.*
 
 ## Demo Video
 For a demonstration video of Bot-thoven in action, please view the [Bot-thoven Demo Video](https://youtu.be/9Ag7zkTR_XE).
@@ -11,18 +14,18 @@ For a demonstration video of Bot-thoven in action, please view the [Bot-thoven D
 ## Project Website
 Please visit the [Project Website](https://hackaday.io/project/167574-bot-thoven-a-robot-musician) for more details about the Bot-thoven Project.
 
-![Bot-thoven Image](https://cdn.hackaday.io/images/652441586658255197.png)
+![Bot-thoven Image](img/fullview.png)
 
 # Details
 Below is an image mockup of the servo-mallet system that we constructed for this project:
 
-![Servo Mallet System Mockup](https://cdn.hackaday.io/images/3383851573742072631.png)
+![Servo Mallet System Mockup](img/cadmockup.png)
 
 We built one servo-mallet system for each xylophone key. The Arduino platform was used to control the movement of each individual servo-mallet system. 
 
 Below is an image of the final servo-mallet system used in this project:
 
-![Servo Mallet System](https://cdn.hackaday.io/images/4278681573742078844.png)
+![Servo Mallet System](img/fullview.png)
 
 
 The [Starter Code](bot-thoven_starter.ino) that I wrote for this project is included in this repository. 
