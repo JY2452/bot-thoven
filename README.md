@@ -5,7 +5,7 @@ This repository contains the code used to build **Bot-thoven**, a xylophone-play
 ## Demo Video
 For a demonstration video of Bot-thoven in action, please view the [Bot-thoven Demo Video](https://youtu.be/9Ag7zkTR_XE).
 
-![Bot-thoven GIF](https://media.giphy.com/media/BhIZiJYZ1FaVuQVpO6/giphy.gif)
+![](img/demo.gif)
 
 
 ## Project Website
